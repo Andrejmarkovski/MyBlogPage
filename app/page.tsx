@@ -1,5 +1,5 @@
 "use client";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
