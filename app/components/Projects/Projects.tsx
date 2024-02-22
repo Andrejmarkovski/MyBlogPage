@@ -34,4 +34,7 @@ const Projects = React.forwardRef<HTMLDivElement, ProjectsMeProps>(
     );
   }
 );
+
+Projects.displayName = "Projects";
+
 export default Projects;

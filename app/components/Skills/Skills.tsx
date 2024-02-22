@@ -73,5 +73,6 @@ const Skills = React.forwardRef<HTMLDivElement, SkillsMeProps>(
     );
   }
 );
+Skills.displayName = "Skills";
 
 export default Skills;

@@ -32,11 +32,6 @@ const Contact = React.forwardRef<HTMLDivElement, ConMeProps>(
       <div ref={myConREf} className="aboutmeBackGroundColor pt-3 pb-3">
         <div className="BackGrouImgContact">
           <div className="position-relative d-flex text-center  justify-content-center align-items-center flex-column">
-            {/* <img
-              className="w-100 contactImg"
-              src="/conctack/contact-us-banner.jpg"
-              alt=""
-            /> */}
             <div className="w-100 pt-3 pb-3">
               <h1 className="logoColor">Let's chat</h1>
               <form
@@ -78,5 +73,5 @@ const Contact = React.forwardRef<HTMLDivElement, ConMeProps>(
     );
   }
 );
-
+Contact.displayName = "Contact";
 export default Contact;

@@ -28,12 +28,6 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutMeProps>(
               </p>
             </div>
             <div className="col-12 col-lg-6 col-md-6  position-relative">
-              {/* <div className="imgBacgColorAboutMe aboutmeBackGroundColor float-end"></div>
-              <img
-                className="w-60 position-absolute aboutMeImg"
-                src="/slika/newpic.jpg"
-                alt=""
-              /> */}
               <img
                 className=" float-end aboutmeImg"
                 src="/slika/1212.png"
@@ -46,5 +40,7 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutMeProps>(
     );
   }
 );
+
+AboutMe.displayName = "AboutMe";
 
 export default AboutMe;

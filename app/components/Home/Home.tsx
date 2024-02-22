@@ -49,5 +49,6 @@ const Home = React.forwardRef<HTMLDivElement, HomeMeProps>(
     );
   }
 );
+Home.displayName = "Home";
 
 export default Home;
