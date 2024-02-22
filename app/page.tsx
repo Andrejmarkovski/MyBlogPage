@@ -1,3 +1,4 @@
+"use client";
 import { useRef } from "react";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Contact from "./components/Contact/Contact";
