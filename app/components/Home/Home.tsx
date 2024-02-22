@@ -9,12 +9,12 @@ const Home = React.forwardRef<HTMLDivElement, HomeMeProps>(
             <div className="col-12  col-md-6 col-sm-6  d-flex flex-column justify-content-center align-items-start">
               <div className="marginTop">
                 <h1 className="text-white  mb-4">
-                  Hi 👋👋👋 , i'm Andrej i'm a
+                  Hi 👋👋👋 , I&apos;am Andrej I&apos;am
                   <span className="logoColor"> Front-End Developer</span>
                 </h1>
                 <h3 className="text-white">
-                  I am Andrej i am a passionate Front-End Developer. Let's chat
-                  and see what we can do together.
+                  I am Andrej i am a passionate Front-End Developer. Let&apos;s
+                  chat and see what we can do together.
                 </h3>
                 <a
                   id="firstBtnCv"
