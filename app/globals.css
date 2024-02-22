@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* img {
+  width: 100%;
+} */
+
+.navBarBackGroundColor {
+  background-color: #141b27;
+}
+
+ul .navClick {
+  margin-right: 25px;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}
+
+.imgBG {
+  height: 100vh;
+  background: url("/background/bg4.jpg");
+  background-size: cover;
+  z-index: 1;
+}
+.navMainDiv ul li {
+  cursor: pointer;
+}
+
+#nav {
+  top: 1%;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.zInex2 {
+  z-index: 2;
+}
+
+.logoColor {
+  color: #3980bc;
+}
+
+h1 {
+  font-size: 60px !important;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  display: block;
+  height: 3px;
+  margin: 3px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .myImg {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .marginTop {
+    margin-top: 55px;
+  }
+  #firstBtnCv {
+    display: none;
+  }
+
+  .CVbtn {
+    border: 2px solid blue;
+    background-color: transparent;
+    padding: 3px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .contactImg {
+    height: 200px;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 769px) {
+  .marginTop {
+    margin-top: 0px;
+  }
+  .myImg {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #secondBtnCv {
+    display: none;
+  }
+
+  #firstBtnCv {
+    display: block;
+  }
+
+  .CVbtn {
+    border: 2px solid blue;
+    background-color: transparent;
+    padding: 3px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  .myImg {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #secondBtnCv {
+    display: none;
+  }
+  .CVbtn {
+    border: 2px solid blue;
+    background-color: transparent;
+    padding: 3px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navMainDiv {
+    position: absolute;
+    top: -265%;
+    background-color: #141b27;
+    width: 100%;
+    transition: 0.3s;
+    z-index: -5;
+  }
+
+  .navMainDiv.active {
+    top: 98%;
+  }
+  nav {
+    text-align: center;
+  }
+  #nav {
+    top: 0%;
+  }
+  .navMainDiv ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navMainDiv ul li {
+    margin: 0%;
+  }
+
+  h1 {
+    font-size: 39px !important;
+  }
+
+  .skillCard {
+    padding: 1.5rem;
+  }
+  .pTagAboutMe {
+    font-size: 16px;
+    padding-left: 20px;
+  }
+  .aboutmeImg {
+    width: 80%;
+  }
+
+  input,
+  textarea {
+    padding: 0px 10px;
+    border: 1px solid blue;
+    background-color: transparent;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .contactForm {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 30px !important;
+  }
+
+  .btncontact {
+    padding: 3px 16px;
+    border: 1px solid blue;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+  }
+}
+
+@media (min-width: 1001px) {
+  .skillCard {
+    padding: 50px 40px 100px 40px;
+  }
+
+  #secondBtnCv {
+    display: none;
+  }
+  .pTagAboutMe {
+    font-size: 20px;
+    padding-left: 90px;
+  }
+
+  .aboutmeImg {
+    width: 60%;
+  }
+
+  input,
+  textarea {
+    padding: 5px 10px;
+    border: 1px solid blue;
+    background-color: transparent;
+    width: 30%;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .btncontact {
+    padding: 8px 16px;
+    border: 1px solid blue;
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+  }
+  .CVbtn {
+    border: 2px solid blue;
+    background-color: transparent;
+    padding: 10px 80px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+  }
+}
+
+/*skills*/
+.cardsBackG {
+  background-color: #09101a;
+}
+
+.colHeightSkills {
+  height: 400px;
+}
+
+.skillCard {
+  border-radius: 20px;
+}
+
+#imgFrontEnd {
+  background: url("/tools/react5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+}
+
+#desFrontEnd {
+  background: url("/tools/design2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+}
+
+#videoFrontEnd {
+  background: url("/tools/videoedit3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.5s;
+}
+
+#imgFrontEnd:hover {
+  background: url("/tools/react6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#desFrontEnd:hover {
+  background: url("/tools/design1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#videoFrontEnd:hover {
+  background: url("/tools/videoedit2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.skillCard ul li {
+  text-transform: capitalize;
+}
+
+/* about me section*/
+
+.aboutmeBackGroundColor {
+  background-color: #02050a;
+}
+
+.imgBacgColorAboutMe {
+  width: 396px;
+  height: 528px;
+  background-color: #282d31;
+}
+
+.aboutMeImg {
+  left: 200px;
+  top: 25px;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+hr {
+  width: 15%;
+  border: 1px solid white !important;
+  opacity: 1 !important;
+  border-radius: 50px;
+}
+
+/*contact*/
+
+.contactImg {
+  opacity: 0.2;
+}
+
+footer {
+  background-color: #141b27;
+  color: white;
+  width: 100%;
+}
+
+.BackGrouImgContact {
+  background: rgba(0, 0, 0, 0.6) url("/conctack/contact-us-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+::placeholder {
+  color: white;
+}
