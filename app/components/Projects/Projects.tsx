@@ -1,7 +1,19 @@
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 interface ProjectsMeProps {}
 const Projects = React.forwardRef<HTMLDivElement, ProjectsMeProps>(
   (props, myProjRef) => {
+    let [hoverEle, setHoverele] = useState(false);
+
+    const onMouseEnter = () => {
+      setHoverele(true);
+      console.log(hoverEle);
+    };
+
+    const onMouseLeave = () => {
+      setHoverele(false);
+      console.log(hoverEle);
+    };
     return (
       <div
         ref={myProjRef}
@@ -20,12 +32,28 @@ const Projects = React.forwardRef<HTMLDivElement, ProjectsMeProps>(
           <div className="row gap-5 pt-3">
             <div className="col-12 col-md-6 ">
               <div>
-                <img className="w-100" src="/projects/pecurki.jpg" alt="" />
+                <Link
+                  target="_blank"
+                  href="https://pechurki-mk-3f58vzv4f-andrejmarkovskis-projects.vercel.app/"
+                >
+                  <img className="w-100" src="/projects/pecurki.jpg" alt="" />
+                </Link>
               </div>
             </div>
             <div className="col-12 col-md-5 ">
-              <div>
-                <img className="w-100" src="/projects/projdect2.jpg" alt="" />
+              <div
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+                className="position-relative pointer"
+              >
+                <img className="w-100 " src="/projects/projdect2.jpg" alt="" />
+                <div
+                  className={`w-100 notshowingdiv  position-absolute ${
+                    hoverEle ? "unHidden" : "hidden"
+                  }`}
+                >
+                  <p className="m-0 p-0 ptagNotReady">Not ready yet</p>
+                </div>
               </div>
             </div>
           </div>

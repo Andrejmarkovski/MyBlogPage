@@ -33,7 +33,7 @@ const Contact = React.forwardRef<HTMLDivElement, ConMeProps>(
         <div className="BackGrouImgContact">
           <div className="position-relative d-flex text-center  justify-content-center align-items-center flex-column">
             <div className="w-100 pt-3 pb-3">
-              <h1 className="logoColor">Let&apos;s chat</h1>
+              <h1 className="text-white">Let&apos;s chat</h1>
               <form
                 ref={form}
                 onSubmit={sendEmail}
